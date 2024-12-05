@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Importa fontes do Google Fonts para uso no site. */
+
+/* Define estilo global para todos os elementos. */
+* {
+    margin: 0px; /* Remove a margem padrão de todos os elementos. */
+    padding: 0px; /* Remove o padding padrão de todos os elementos. */
+    box-sizing: border-box; /* Inclui bordas e padding no tamanho total dos elementos. */
+    font-size: 14px; /* Define o tamanho padrão da fonte como 14px. */
+    font-family: "ubuntu"; /* Define a fonte padrão como "Ubuntu". */
+}
+
+/* Define o estilo para o elemento <header>. */
+header {
+    width: 100%; /* Faz o header ocupar toda a largura da tela. */
+    background-color: black; /* Define a cor de fundo inicial como preto. */
+    padding: 15px; /* Adiciona um espaço interno de 15px em todas as direções. */
+    position: absolute; /* Posiciona o header de forma absoluta na página. */
+    display: flex; /* Usa Flexbox para o layout interno do header. */
+    justify-content: space-between; /* Espaça os elementos do header igualmente entre si. */
+    background: rgb(0,0,0); /* Cor preta inicial (fallback para navegadores antigos). */
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Gradiente linear para Firefox. */
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Gradiente linear para navegadores baseados em WebKit. */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Gradiente linear para navegadores modernos. */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); /* Gradiente para navegadores antigos da Microsoft. */
+}
+
+/* Estiliza o elemento <span> dentro do header. */
+header span {
+    color: white; /* Define a cor do texto como branca. */
+    padding-left: 70px;
+}
+
+.title a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Estiliza os links <a> dentro do <nav> do header. */
+header nav a {
+    color: white; /* Define a cor do texto do link como branca. */
+    text-decoration: none; /* Remove o sublinhado dos links. */
+    margin-left: 10px; /* Adiciona uma margem esquerda de 10px entre os links. */
+}
+
+/* Estiliza o elemento com a classe .banner. */
+.banner {
+    background-image: url("../imgs/vingadores.jpg"); /* Define uma imagem de fundo para o banner. */
+    background-size: cover; /* Faz a imagem cobrir toda a área do banner. */
+    background-position: center; /* Centraliza a imagem de fundo. */
+    width: 100vw; /* Define a largura do banner como 100% da largura da viewport. */
+    height: 100vh; /* Define a altura do banner como 100% da altura da viewport. */
+    display: flex; /* Usa Flexbox para organizar os itens dentro do banner. */
+    align-items: flex-end; /* Alinha os itens dentro do banner no final verticalmente. */
+    padding-left: 100px; /* Adiciona um espaçamento à esquerda de 10px. */
+    padding-bottom: 200px; /* Adiciona um espaçamento inferior de 200px. */
+}
+
+/* Define estilo para os títulos <h1> dentro do .banner. */
+.banner h1 {
+    color: white; /* Define a cor do texto como branca. */
+    font-size: 3em; /* Define o tamanho da fonte como 3em. */
+}
+
+/* Define estilo para os parágrafos <p> dentro do .banner. */
+.banner p {
+    color: white; /* Define a cor do texto como branca. */
+}
+
+/* Comentado trecho de código para responsividade. */
+/*
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 8px !important; /* Reduz o tamanho da fonte para 8px em telas pequenas. */
+
+.filmes-series {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    min-height: 200px;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+    
+
+}
+
+.filmes-series .inputs {
+
+margin-bottom: 10px;
+display: flex;
+
+}
+
+.filmes-series .inputs label {
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+
+.filmes-series .inputs label input,select {
+
+    width: 250px;
+    margin-top: 10px;
+    background-color: black;
+    border: 1px solid white; 
+    margin-bottom: 20px;
+    border-radius: 7px 0px 0px 7px;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-right: none;
+    
+
+}
+
+.borda-genero {
+
+     border: 1px solid white;
+     border-radius: 7px;
+
+}
+
+.inputs .pesquisa1 {
+
+display: flex;
+
+}
+
+
+.inputs .pesquisa1 img {
+
+    width: 30px;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-left: none;
+    border-radius: 0px 7px 7px 0px;
+
+   
+
+}
+
+
+.filmes-series h2 {
+
+    color: white;
+
+}
+
+.filmes-series .card-conteiner {
+
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    display: flex;
+
+}
+
+.filmes-series .card1 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/o\ corvo.jpg);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card2 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/interestelar.jpg);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card3 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/Assassinos-da-Lua-das-Flores-Raio-Click.webp);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card4 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/bad\ boys.webp);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card5 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/ilusões.webp);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card6 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/lucio.jpg);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card7 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/the\ last.jfif);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card8 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/the\ office.jpg);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card9 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/estranho.jpg);
+    margin-right: 50px;
+
+
+}
+
+.filmes-series .card10 {
+
+    height: 150px;
+    width: 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imgs/yy.jpg);
+    margin-right: 50px;
+
+
+}
+
+footer {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer img {
+
+    color: white;
+
+}
+
+footer .icons-container {
+
+    display: flex;
+
+}
+
+footer .icons-container  img{
+
+    height: 30px;
+    margin-right: 15px;
+
+
+}
+
+            /*pagina 2*/
+
+            .banner2 {
+
+                background-image: url(../imgs/20190318-banner.png);
+                background-color: black;
+                background-size: cover; /* Faz a imagem de fundo cobrir todo o espaço do banner */
+                background-position: center; /* Centraliza a imagem de fundo */
+                width: 100vw; /* Define a largura do banner como 100% da largura da janela de visualização */
+                height: 100vh; /* Define a altura do banner como 100% da altura da janela de visualização */    
+                display: flex;
+                align-items: flex-end;
+                padding-left: 100px;
+                padding-bottom: 200px;
+            
+            }
+            
+            .detalhe1 {
+            
+            
+                width: 200vh;
+                height: auto;
+                background-color: black;
+                min-height: 200px;
+                font-family: "Open Sans";
+                color: white;
+                padding-top: 40px;
+                padding-left: 100px;
+                padding-right: 95px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 100px;
+            
+            }
+            
+            .detalhe {
+            
+            
+                width: 200vh;
+                height: auto;
+                background-color: black;
+                min-height: 200px;
+                font-family: "Open Sans";
+                color: white;
+                padding-left: 40px;
+                padding-right: 95px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 100px;
+            
+            }
+            
+            .detalhe h1 {
+            
+                color: white; 
+                padding-left: 150px;
+                font-size: 30px;
+                
+            
+            
+            }
+            
+            .detalhe p {
+            
+                color: white;
+                padding-left: 15px;
+                width: 700px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                
+            
+            }
+            
+            .teste {
+            
+                display: flex;
+            
+            }
+            
+            .classificacao {
+            
+                display: flex;
+                padding-left: 150px;
+                padding-top: 10px;
+                
+                
+            
+            }
+            
+            .classificacao img {
+            
+                height: 50px;
+            
+            }
+            
+            .duracao {
+            
+                display: flex;
+                padding-left: 130px;
+                padding-top: 10px;
+            
+            
+            }
+            
+            .sinopse {
+            
+                display: flex;
+                padding-left: 130px;
+                padding-top: 10px;
+            
+                
+            }
+
+
+            .elenco {
+
+                width: 200vh;
+                height: auto;
+                background-color: black;
+                min-height: 200px;
+                padding: 15px;
+                padding-left: 100px;
+                padding-right: 100px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 100px;
+                padding: 80px;
+                padding-left: 100px;
+                
+            
+            }
+            
+            .elenco h2 {
+            
+                color: white;
+            
+            }
+            
+            .elenco .card-elenco {
+            
+                width: 100%;
+                margin-top: 10px;
+                height: auto;
+                display: flex;
+                color: white;
+            
+            }
+            
+            .elenco .card1 {
+
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/hugh.jfif);
+                margin-right: 50px;
+            
+            
+            }
+            
+            .elenco .card2 {
+            
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/jake.jfif);
+                margin-right: 50px;
+            
+            
+            }
+            
+            .elenco .card3 {
+            
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/paul.jfif);
+                margin-right: 50px;
+            
+            
+            }
+            
+            .elenco .card4  {
+            
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/estrupador.jfif);
+                margin-right: 50px;
+            
+            
+            }
+            
+            .elenco .card5 {
+            
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/veia.jfif);
+                margin-right: 50px;
+            
+            
+            }
+            
+            .elenco .card6 {
+            
+                height: 150px;
+                width: 80px;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../imgs/elenco/muié.jfif);
+                margin-right: 50px;
+            
+            
+            }
+
+.trailer {
+
+    margin-top: 40px;
+    padding-left: 120px;
+    padding-right:120px ;
+    background-color: black
+    
+}
+            
+   body {
+
+    background-color: black;
+
+   }         
+      
+   @media (max-width: 768px) {
+
+    .banner {
+
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-bottom: 75px;
+
+    }
+
+    .banner p {
+
+        font-size: 18px;
+        width: 100%;
+        text-align: justify;
+
+
+    }
+
+    .filmes-series {
+
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+
+
+   .filmes-series .inputs {
+        flex-wrap: wrap;
+    
+    }
+   
+    /* .filmes-series .inputs label {
+
+        flex-basis: 80%;
+        
+    } */
+
+    .filmes-series .card-conteiner {
+
+       flex-wrap: wrap;
+       justify-content: center;
+
+
+    }
+
+    .filmes-series .card1, 
+    .filmes-series .card2, 
+    .filmes-series .card3, 
+    .filmes-series .card4, 
+    .filmes-series .card5, 
+    .filmes-series .card6, 
+    .filmes-series .card7, 
+    .filmes-series .card8, 
+    .filmes-series .card9, 
+    .filmes-series .card10 { 
+
+        margin-right: 0px;
+    
+    
+    }
+
+    .card-conteiner .card {
+
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+
+    }
+
+
+
+
+   }

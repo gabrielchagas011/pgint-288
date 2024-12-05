@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+.cabecalho {
+
+    align-items: center;
+    width: 100vw ;
+    height: 80px ;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cabecalho span {
+    color: white;
+    margin-left: 30px;
+}
+
+.cabecalho nav a {
+    color: white;
+    text-decoration: none;
+   margin-right: 10px;
+
+}
+
+.banner {
+
+    background-image: url("../styles/imgs/vingadores.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 95vw;
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px;
+    padding-bottom: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.banner  h1 {
+
+    color: white;
+    font-size: 3em;
+
+}
+
+.banner {
+
+    color: white;
+
+}
+.textos {
+    margin: 20px;
+    color:black;
+
+}
+.textos h1 {
+
+    font-size: 3em;
+
+}
+
+.textos p {
+
+
+
+}
